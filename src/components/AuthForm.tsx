@@ -23,7 +23,7 @@ const AuthForm = () => {
       } else {
         const { error } = await signUp(email, password, name);
         if (error) throw error;
-        toast.success("Account created! Check your email to confirm.");
+        toast.success("Account created! Welcome to the Zone!");
       }
     } catch (err: any) {
       toast.error(err.message || "Something went wrong");
